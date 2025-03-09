@@ -1,10 +1,13 @@
-﻿using System;
+﻿using RecordsDataSystem.GroupClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,13 +16,12 @@ namespace RecordsDataSystem
 {
     public partial class Form1: Form
     {
-        readonly string PDFConnection = "Data Source=Bernice\\Sqlexpress;Initial Catalog=DB_PatientDataForm;Integrated Security=True;Encrypt=False";
+        readonly string PDFConnection = "Data Source=bernice\\sqlexpress;Initial Catalog=MRDSystem;Integrated Security=True;Encrypt=False";
         public Form1()
         {
             InitializeComponent();
             DisplayData();
-            PatientHistory_guna2DataGridView1.BringToFront();
-            BTN_Print_ERTransfer.Visible = false;
+           
         }
         #region
         private void BTN_EXIT_Click ( object sender, EventArgs e )
@@ -70,32 +72,48 @@ namespace RecordsDataSystem
             ExitApps();
         }
         #endregion
-        private void DisplayData ()
+       
+        public DataTable dt = new DataTable();
+        public DataSet ds = new DataSet();
+        private DataTable DisplayData ()
         {
-            using (var con = new SqlConnection(PDFConnection))
+            try
             {
-                con.Open();
-                using ( var cmd = new SqlCommand("Select DateRegister AS[Date Register], Name AS[Patient Name], HospitalNo, Attending AS[Attending Physician], " +
-                    "RoomNo, Status, Age, gender  From TBL_PatientHistory", con))
+                using (var con = new SqlConnection(PDFConnection))
                 {
-                    using ( var sda = new SqlDataAdapter(cmd))
-                    {
-                        using (var dt = new DataTable())
-                        {
-                            sda.Fill(dt);
+                    string Display = Class_DisplayDataSource.DataSource();
+                    con.Open();
 
-                            PatientHistory_guna2DataGridView1.DataSource = dt;
+                    using (var cmd = new SqlCommand(Display, con))
+                    {
+                        using (var sda = new SqlDataAdapter(cmd))
+                        {
+                            ds.Clear();
+                            sda.Fill(ds);
+                            dt = ds.Tables[0];
+                            PatientHistory_DataGridView1.DataSource = dt;
+                            //Hiding a column
+                            Class_DataGridViewColumnToHide.ColomnToHide(PatientHistory_DataGridView1);
+                            ///Resizing a column
+                            Class_DataGridViewResizingColumns.ResizeColumnWidth(PatientHistory_DataGridView1);
+
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Database exception error :" + " " + ex.Message, "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            }
+            return dt;
         }
         private void BTN_Homepage_Click ( object sender, EventArgs e )
         {
-            PatientHistory_guna2DataGridView1.BringToFront();
+            PatientHistory_DataGridView1.BringToFront();
             BTN_PrintAbstract.Enabled = true;
             BTN_PrintHistory.Enabled = true;
-            BTN_Print_ERTransfer.Visible = false;
+           
         }
         private void PatientHistory ()
         {
@@ -124,18 +142,14 @@ namespace RecordsDataSystem
 
         private void BTN_ERTransfer_Click ( object sender, EventArgs e )
         {
-            ER_guna2DataGridView1.BringToFront();
-            PatientHistory_guna2DataGridView1.SendToBack();
-            BTN_PrintHistory.Enabled = false;
-            BTN_PrintAbstract.Enabled = false;
-            BTN_Print_ERTransfer.Visible = true;
+          
             var open = new ERForms(); open.ShowDialog();
             
         }
 
         private void createERTransferToolStripMenuItem_Click ( object sender, EventArgs e )
         {
-
+            var open = new ERForms();open.ShowDialog();
         }
 
         private void BTN_MedicalCertificate_Click ( object sender, EventArgs e )
@@ -161,7 +175,7 @@ namespace RecordsDataSystem
         private void refreshToolStripMenuItem_Click ( object sender, EventArgs e )
         {
             DisplayData();
-            PatientHistory_guna2DataGridView1.BringToFront();
+            PatientHistory_DataGridView1.BringToFront();
         }
 
         private void removeToolStripMenuItem_Click ( object sender, EventArgs e )
@@ -201,15 +215,23 @@ namespace RecordsDataSystem
 
         private void Edit_patientHistoryToolStripMenuItem_Click ( object sender, EventArgs e )
         {
+            var open = new Update_PatientHistory();open.ShowDialog();
+        }             
+
+        private void Edit_medicalCertificateToolStripMenuItem_Click ( object sender, EventArgs e )
+        {
 
         }
+        #endregion
 
-        private void Edit_patientHistoryToolStripMenuItem2_Click ( object sender, EventArgs e )
+        private void PatientHistory_DataGridView1_CellContentClick ( object sender, DataGridViewCellEventArgs e )
         {
 
         }
 
-        #endregion
+        private void PatientHistory_DataGridView1_CellClick ( object sender, DataGridViewCellEventArgs e )
+        {
 
+        }
     }
 }

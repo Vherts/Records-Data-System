@@ -91,6 +91,10 @@
     <Compile Include="AlluserAccountForm.Designer.cs">
       <DependentUpon>AlluserAccountForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroupClass\Class_DataGridViewColumnToHide.cs" />
+    <Compile Include="GroupClass\Class_DataGridViewResizingColumns.cs" />
+    <Compile Include="GroupClass\Class_DisplayDataSource.cs" />
+    <Compile Include="GroupClass\Class_InsertionQuery.cs" />
     <Compile Include="ERForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,7 +119,7 @@
     <Compile Include="PatientHistory.Designer.cs">
       <DependentUpon>PatientHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="PHistory.cs" />
+    <Compile Include="GroupClass\PHistory.cs" />
     <Compile Include="PHistoryPage2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +129,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Update_PatientHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_PatientHistory.Designer.cs">
+      <DependentUpon>Update_PatientHistory.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AlluserAccountForm.resx">
       <DependentUpon>AlluserAccountForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +162,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Update_PatientHistory.resx">
+      <DependentUpon>Update_PatientHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace RecordsDataSystem
 {
-    partial class PatientHistory
+    partial class Update_PatientHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            this.BTN_Save = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.BTN_SaveAndClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_UpdateAndClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_Save = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label14 = new System.Windows.Forms.Label();
@@ -120,6 +120,39 @@
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.Controls.Add(this.BTN_UpdateAndClose);
+            this.guna2GradientPanel1.Controls.Add(this.BTN_Save);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 658);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(835, 49);
+            this.guna2GradientPanel1.TabIndex = 3;
+            // 
+            // BTN_UpdateAndClose
+            // 
+            this.BTN_UpdateAndClose.BackColor = System.Drawing.Color.Transparent;
+            this.BTN_UpdateAndClose.BorderRadius = 4;
+            this.BTN_UpdateAndClose.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.BTN_UpdateAndClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_UpdateAndClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_UpdateAndClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_UpdateAndClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_UpdateAndClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_UpdateAndClose.FillColor = System.Drawing.Color.Empty;
+            this.BTN_UpdateAndClose.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_UpdateAndClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BTN_UpdateAndClose.ForeColor = System.Drawing.Color.White;
+            this.BTN_UpdateAndClose.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_UpdateAndClose.Location = new System.Drawing.Point(340, 5);
+            this.BTN_UpdateAndClose.Name = "BTN_UpdateAndClose";
+            this.BTN_UpdateAndClose.Size = new System.Drawing.Size(155, 41);
+            this.BTN_UpdateAndClose.TabIndex = 1;
+            this.BTN_UpdateAndClose.Text = "Update and Close";
+            this.BTN_UpdateAndClose.Click += new System.EventHandler(this.BTN_UpdateAndClose_Click);
+            // 
             // BTN_Save
             // 
             this.BTN_Save.BackColor = System.Drawing.Color.Transparent;
@@ -137,43 +170,9 @@
             this.BTN_Save.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.BTN_Save.Location = new System.Drawing.Point(480, 4);
             this.BTN_Save.Name = "BTN_Save";
-            this.BTN_Save.Size = new System.Drawing.Size(155, 41);
+            this.BTN_Save.Size = new System.Drawing.Size(0, 0);
             this.BTN_Save.TabIndex = 1;
             this.BTN_Save.Text = "Save";
-            this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.Controls.Add(this.BTN_SaveAndClose);
-            this.guna2GradientPanel1.Controls.Add(this.BTN_Save);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 660);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(835, 47);
-            this.guna2GradientPanel1.TabIndex = 2;
-            // 
-            // BTN_SaveAndClose
-            // 
-            this.BTN_SaveAndClose.BackColor = System.Drawing.Color.Transparent;
-            this.BTN_SaveAndClose.BorderRadius = 4;
-            this.BTN_SaveAndClose.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.BTN_SaveAndClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_SaveAndClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_SaveAndClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_SaveAndClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_SaveAndClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_SaveAndClose.FillColor = System.Drawing.Color.Empty;
-            this.BTN_SaveAndClose.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.BTN_SaveAndClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BTN_SaveAndClose.ForeColor = System.Drawing.Color.White;
-            this.BTN_SaveAndClose.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_SaveAndClose.Location = new System.Drawing.Point(641, 4);
-            this.BTN_SaveAndClose.Name = "BTN_SaveAndClose";
-            this.BTN_SaveAndClose.Size = new System.Drawing.Size(155, 41);
-            this.BTN_SaveAndClose.TabIndex = 1;
-            this.BTN_SaveAndClose.Text = "Save and Close";
-            this.BTN_SaveAndClose.Click += new System.EventHandler(this.BTN_SaveAndClose_Click);
             // 
             // panel1
             // 
@@ -184,10 +183,10 @@
             this.panel1.Controls.Add(this.guna2Panel1);
             this.panel1.Controls.Add(this.guna2GradientPanel2);
             this.panel1.Controls.Add(this.guna2GradientPanel3);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 656);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(835, 627);
+            this.panel1.TabIndex = 4;
             // 
             // guna2Panel2
             // 
@@ -1332,16 +1331,16 @@
             this.txt_MedicalHistory.Size = new System.Drawing.Size(746, 36);
             this.txt_MedicalHistory.TabIndex = 1;
             // 
-            // PatientHistory
+            // Update_PatientHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 707);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Name = "PatientHistory";
+            this.Name = "Update_PatientHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Patient History";
+            this.Text = "Update_PatientHistory";
             this.guna2GradientPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
@@ -1365,39 +1364,11 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2GradientButton BTN_Save;
+
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2GradientButton BTN_SaveAndClose;
+        private Guna.UI2.WinForms.Guna2GradientButton BTN_UpdateAndClose;
+        private Guna.UI2.WinForms.Guna2GradientButton BTN_Save;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox cmb_Status;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox cmb_Gender;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Age;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Room;
-        private Guna.UI2.WinForms.Guna2TextBox txt_ChiefComplaints;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Physcian;
-        private Guna.UI2.WinForms.Guna2TextBox txt_HospitalNo;
-        private Guna.UI2.WinForms.Guna2TextBox txt_PatientName;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2TextBox txt_PresentIlleness;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
-        private Guna.UI2.WinForms.Guna2TextBox txt_ReviewHistory;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox txt_SocialHistory;
-        private Guna.UI2.WinForms.Guna2TextBox txt_FamilyHistory;
-        private Guna.UI2.WinForms.Guna2TextBox txt_MedicalHistory;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -1428,6 +1399,7 @@
         private System.Windows.Forms.TextBox txt_APhysician;
         private System.Windows.Forms.TextBox txt_DateDischarged;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label Lbl_UserName;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
@@ -1444,6 +1416,34 @@
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2_TRANSFERED;
         private System.Windows.Forms.Label label32;
         private Guna.UI2.WinForms.Guna2TextBox txt_FinalDiagnosis;
-        private System.Windows.Forms.Label Lbl_UserName;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmb_Status;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmb_Gender;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Age;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Room;
+        private Guna.UI2.WinForms.Guna2TextBox txt_ChiefComplaints;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Physcian;
+        private Guna.UI2.WinForms.Guna2TextBox txt_HospitalNo;
+        private Guna.UI2.WinForms.Guna2TextBox txt_PatientName;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_PresentIlleness;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private Guna.UI2.WinForms.Guna2TextBox txt_ReviewHistory;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txt_SocialHistory;
+        private Guna.UI2.WinForms.Guna2TextBox txt_FamilyHistory;
+        private Guna.UI2.WinForms.Guna2TextBox txt_MedicalHistory;
     }
 }

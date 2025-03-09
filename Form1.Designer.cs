@@ -32,9 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -71,7 +68,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.BTN_Filter = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_PrintAbstract = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.BTN_Print_ERTransfer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_PrintHistory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_Search = new Guna.UI2.WinForms.Guna2GradientButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -85,7 +81,6 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Edit_eRTransferToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Edit_medicalAbstractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Edit_patientHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Edit_patientHistoryToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.formsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Form_ERTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,10 +109,9 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.PatientHistory_guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.PatientHistory_DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ER_guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Edit_medicalCertificateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -131,8 +125,7 @@
             this.guna2GroupBox3.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PatientHistory_guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ER_guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientHistory_DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -546,7 +539,6 @@
             this.guna2GradientPanel2.Controls.Add(this.dateTimePicker1);
             this.guna2GradientPanel2.Controls.Add(this.BTN_Filter);
             this.guna2GradientPanel2.Controls.Add(this.BTN_PrintAbstract);
-            this.guna2GradientPanel2.Controls.Add(this.BTN_Print_ERTransfer);
             this.guna2GradientPanel2.Controls.Add(this.BTN_PrintHistory);
             this.guna2GradientPanel2.Controls.Add(this.BTN_Search);
             this.guna2GradientPanel2.Controls.Add(this.menuStrip1);
@@ -671,26 +663,6 @@
             this.BTN_PrintAbstract.TabIndex = 0;
             this.BTN_PrintAbstract.Text = "Print Medical Abstract";
             // 
-            // BTN_Print_ERTransfer
-            // 
-            this.BTN_Print_ERTransfer.BorderRadius = 4;
-            this.BTN_Print_ERTransfer.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.BTN_Print_ERTransfer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Print_ERTransfer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Print_ERTransfer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Print_ERTransfer.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Print_ERTransfer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_Print_ERTransfer.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.BTN_Print_ERTransfer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BTN_Print_ERTransfer.ForeColor = System.Drawing.Color.White;
-            this.BTN_Print_ERTransfer.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_Print_ERTransfer.Location = new System.Drawing.Point(261, 37);
-            this.BTN_Print_ERTransfer.Name = "BTN_Print_ERTransfer";
-            this.BTN_Print_ERTransfer.Size = new System.Drawing.Size(135, 30);
-            this.BTN_Print_ERTransfer.TabIndex = 0;
-            this.BTN_Print_ERTransfer.Text = "Print";
-            this.BTN_Print_ERTransfer.Visible = false;
-            // 
             // BTN_PrintHistory
             // 
             this.BTN_PrintHistory.BorderRadius = 4;
@@ -807,8 +779,8 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Edit_eRTransferToolStripMenuItem1,
             this.Edit_medicalAbstractToolStripMenuItem,
-            this.Edit_patientHistoryToolStripMenuItem,
-            this.Edit_patientHistoryToolStripMenuItem2});
+            this.Edit_patientHistoryToolStripMenuItem2,
+            this.Edit_medicalCertificateToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
@@ -816,30 +788,23 @@
             // Edit_eRTransferToolStripMenuItem1
             // 
             this.Edit_eRTransferToolStripMenuItem1.Name = "Edit_eRTransferToolStripMenuItem1";
-            this.Edit_eRTransferToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.Edit_eRTransferToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.Edit_eRTransferToolStripMenuItem1.Text = "E.R Transfer";
             this.Edit_eRTransferToolStripMenuItem1.Click += new System.EventHandler(this.Edit_eRTransferToolStripMenuItem1_Click);
             // 
             // Edit_medicalAbstractToolStripMenuItem
             // 
             this.Edit_medicalAbstractToolStripMenuItem.Name = "Edit_medicalAbstractToolStripMenuItem";
-            this.Edit_medicalAbstractToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.Edit_medicalAbstractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Edit_medicalAbstractToolStripMenuItem.Text = "Medical Abstract";
             this.Edit_medicalAbstractToolStripMenuItem.Click += new System.EventHandler(this.Edit_medicalAbstractToolStripMenuItem_Click);
-            // 
-            // Edit_patientHistoryToolStripMenuItem
-            // 
-            this.Edit_patientHistoryToolStripMenuItem.Name = "Edit_patientHistoryToolStripMenuItem";
-            this.Edit_patientHistoryToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.Edit_patientHistoryToolStripMenuItem.Text = "Medical Certificate";
-            this.Edit_patientHistoryToolStripMenuItem.Click += new System.EventHandler(this.Edit_patientHistoryToolStripMenuItem_Click);
             // 
             // Edit_patientHistoryToolStripMenuItem2
             // 
             this.Edit_patientHistoryToolStripMenuItem2.Name = "Edit_patientHistoryToolStripMenuItem2";
-            this.Edit_patientHistoryToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
+            this.Edit_patientHistoryToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.Edit_patientHistoryToolStripMenuItem2.Text = "Patient History";
-            this.Edit_patientHistoryToolStripMenuItem2.Click += new System.EventHandler(this.Edit_patientHistoryToolStripMenuItem2_Click);
+            this.Edit_patientHistoryToolStripMenuItem2.Click += new System.EventHandler(this.Edit_patientHistoryToolStripMenuItem_Click);
             // 
             // formsToolStripMenuItem
             // 
@@ -1225,146 +1190,67 @@
             this.guna2GradientButton1.Text = "Birth Diploma";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // PatientHistory_guna2DataGridView1
+            // PatientHistory_DataGridView1
             // 
-            this.PatientHistory_guna2DataGridView1.AllowUserToAddRows = false;
-            this.PatientHistory_guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.PatientHistory_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.PatientHistory_guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.PatientHistory_guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.PatientHistory_DataGridView1.AllowUserToAddRows = false;
+            this.PatientHistory_DataGridView1.AllowUserToDeleteRows = false;
+            this.PatientHistory_DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PatientHistory_DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PatientHistory_DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.PatientHistory_DataGridView1.ColumnHeadersHeight = 45;
+            this.PatientHistory_DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PatientHistory_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.PatientHistory_guna2DataGridView1.ColumnHeadersHeight = 35;
-            this.PatientHistory_guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PatientHistory_guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PatientHistory_DataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.PatientHistory_DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PatientHistory_DataGridView1.Location = new System.Drawing.Point(265, 108);
+            this.PatientHistory_DataGridView1.Name = "PatientHistory_DataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PatientHistory_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.PatientHistory_guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PatientHistory_guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.PatientHistory_guna2DataGridView1.Location = new System.Drawing.Point(265, 108);
-            this.PatientHistory_guna2DataGridView1.Name = "PatientHistory_guna2DataGridView1";
-            this.PatientHistory_guna2DataGridView1.RowHeadersVisible = false;
-            this.PatientHistory_guna2DataGridView1.Size = new System.Drawing.Size(718, 623);
-            this.PatientHistory_guna2DataGridView1.TabIndex = 8;
-            this.PatientHistory_guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 35;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            this.PatientHistory_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PatientHistory_DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.PatientHistory_DataGridView1.Size = new System.Drawing.Size(718, 623);
+            this.PatientHistory_DataGridView1.TabIndex = 8;
+            this.PatientHistory_DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientHistory_DataGridView1_CellClick);
+            this.PatientHistory_DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientHistory_DataGridView1_CellContentClick);
             // 
             // Column1
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column1.Frozen = true;
             this.Column1.HeaderText = "";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 40;
+            this.Column1.Width = 50;
             // 
-            // ER_guna2DataGridView1
+            // Edit_medicalCertificateToolStripMenuItem
             // 
-            this.ER_guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.ER_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.ER_guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.ER_guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.ER_guna2DataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ER_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.ER_guna2DataGridView1.ColumnHeadersHeight = 35;
-            this.ER_guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.ER_guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ER_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ER_guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ER_guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.ER_guna2DataGridView1.Location = new System.Drawing.Point(265, 108);
-            this.ER_guna2DataGridView1.Name = "ER_guna2DataGridView1";
-            this.ER_guna2DataGridView1.RowHeadersVisible = false;
-            this.ER_guna2DataGridView1.Size = new System.Drawing.Size(718, 623);
-            this.ER_guna2DataGridView1.TabIndex = 9;
-            this.ER_guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
-            this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.ER_guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ER_guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.ER_guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 35;
-            this.ER_guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.ER_guna2DataGridView1.Visible = false;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewCheckBoxColumn1.Frozen = true;
-            this.dataGridViewCheckBoxColumn1.HeaderText = "";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 40;
+            this.Edit_medicalCertificateToolStripMenuItem.Name = "Edit_medicalCertificateToolStripMenuItem";
+            this.Edit_medicalCertificateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Edit_medicalCertificateToolStripMenuItem.Text = "Medical Certificate";
+            this.Edit_medicalCertificateToolStripMenuItem.Click += new System.EventHandler(this.Edit_medicalCertificateToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1240, 789);
-            this.Controls.Add(this.ER_guna2DataGridView1);
-            this.Controls.Add(this.PatientHistory_guna2DataGridView1);
+            this.Controls.Add(this.PatientHistory_DataGridView1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.panel4);
@@ -1396,8 +1282,7 @@
             this.guna2GroupBox3.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PatientHistory_guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ER_guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientHistory_DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1415,7 +1300,6 @@
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2DataGridView PatientHistory_guna2DataGridView1;
         private System.Windows.Forms.Label Lbl_Total;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -1425,7 +1309,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Filter;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Search;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_PrintAbstract;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_PrintHistory;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -1433,7 +1316,6 @@
         private System.Windows.Forms.ToolStripMenuItem createPatientHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Edit_medicalAbstractToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem Edit_patientHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Form_ERTransferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Form_medicalAbstractToolStripMenuItem1;
@@ -1480,12 +1362,12 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Label Lbl_ID;
-        private Guna.UI2.WinForms.Guna2DataGridView ER_guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Homepage;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_ERPatient;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_All_user;
-        private Guna.UI2.WinForms.Guna2GradientButton BTN_Print_ERTransfer;
+        private System.Windows.Forms.DataGridView PatientHistory_DataGridView1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
+        private System.Windows.Forms.ToolStripMenuItem Edit_medicalCertificateToolStripMenuItem;
     }
 }
 
