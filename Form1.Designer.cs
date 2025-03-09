@@ -29,16 +29,12 @@
         private void InitializeComponent ()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BTN_Minimiz = new Guna.UI2.WinForms.Guna2Button();
-            this.BTN_Maximize = new Guna.UI2.WinForms.Guna2Button();
-            this.BTN_EXIT = new Guna.UI2.WinForms.Guna2Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -53,25 +49,30 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.BTN_All_user = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_Logout = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_SummaryReport = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_MedicalCertificate = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_PatientHistory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_MedicalAbstract = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_UploadPhoto = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_Homepage = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_ERPatient = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_ERTransfer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Lbl_Total = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.Lbl_ID = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.BTN_Filter = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_PrintAbstract = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_Print_ERTransfer = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BTN_PrintHistory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_Search = new Guna.UI2.WinForms.Guna2GradientButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,6 +94,8 @@
             this.Form_PatientHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel5 = new System.Windows.Forms.Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -113,15 +116,8 @@
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PatientHistory_guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Lbl_ID = new System.Windows.Forms.Label();
             this.ER_guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.BTN_Homepage = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.BTN_ERPatient = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.BTN_All_user = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -139,80 +135,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ER_guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.BTN_Minimiz);
-            this.panel1.Controls.Add(this.BTN_Maximize);
-            this.panel1.Controls.Add(this.BTN_EXIT);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 35);
-            this.panel1.TabIndex = 0;
-            // 
-            // BTN_Minimiz
-            // 
-            this.BTN_Minimiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Minimiz.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Minimiz.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Minimiz.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Minimiz.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_Minimiz.FillColor = System.Drawing.Color.Transparent;
-            this.BTN_Minimiz.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
-            this.BTN_Minimiz.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Minimiz.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            this.BTN_Minimiz.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BTN_Minimiz.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Minimiz.Image")));
-            this.BTN_Minimiz.Location = new System.Drawing.Point(1089, 0);
-            this.BTN_Minimiz.Name = "BTN_Minimiz";
-            this.BTN_Minimiz.Size = new System.Drawing.Size(50, 36);
-            this.BTN_Minimiz.TabIndex = 2;
-            this.BTN_Minimiz.Click += new System.EventHandler(this.BTN_Minimiz_Click);
-            // 
-            // BTN_Maximize
-            // 
-            this.BTN_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Maximize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Maximize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Maximize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Maximize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_Maximize.FillColor = System.Drawing.Color.Transparent;
-            this.BTN_Maximize.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
-            this.BTN_Maximize.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Maximize.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            this.BTN_Maximize.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BTN_Maximize.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Maximize.Image")));
-            this.BTN_Maximize.Location = new System.Drawing.Point(1139, 0);
-            this.BTN_Maximize.Name = "BTN_Maximize";
-            this.BTN_Maximize.Size = new System.Drawing.Size(50, 36);
-            this.BTN_Maximize.TabIndex = 1;
-            this.BTN_Maximize.Click += new System.EventHandler(this.BTN_Maximize_Click);
-            // 
-            // BTN_EXIT
-            // 
-            this.BTN_EXIT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_EXIT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_EXIT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_EXIT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_EXIT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_EXIT.FillColor = System.Drawing.Color.Transparent;
-            this.BTN_EXIT.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_EXIT.ForeColor = System.Drawing.Color.Black;
-            this.BTN_EXIT.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            this.BTN_EXIT.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BTN_EXIT.Location = new System.Drawing.Point(1191, 0);
-            this.BTN_EXIT.Name = "BTN_EXIT";
-            this.BTN_EXIT.Size = new System.Drawing.Size(50, 36);
-            this.BTN_EXIT.TabIndex = 0;
-            this.BTN_EXIT.Text = "X";
-            this.BTN_EXIT.Click += new System.EventHandler(this.BTN_EXIT_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 35);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1240, 35);
             this.panel2.TabIndex = 2;
@@ -230,6 +158,7 @@
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.BorderRadius = 3;
             this.guna2GradientPanel1.Controls.Add(this.Lbl_AccountName);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -268,9 +197,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
             this.panel3.Controls.Add(this.guna2Panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(983, 70);
+            this.panel3.Location = new System.Drawing.Point(983, 35);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(257, 688);
+            this.panel3.Size = new System.Drawing.Size(257, 723);
             this.panel3.TabIndex = 4;
             // 
             // guna2Panel1
@@ -301,7 +230,7 @@
             this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.guna2Panel1.Location = new System.Drawing.Point(7, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(246, 676);
+            this.guna2Panel1.Size = new System.Drawing.Size(246, 711);
             this.guna2Panel1.TabIndex = 0;
             // 
             // linkLabel1
@@ -310,7 +239,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Lime;
-            this.linkLabel1.Location = new System.Drawing.Point(89, 649);
+            this.linkLabel1.Location = new System.Drawing.Point(89, 684);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(69, 16);
             this.linkLabel1.TabIndex = 8;
@@ -323,7 +252,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(54, 627);
+            this.label5.Location = new System.Drawing.Point(54, 662);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 15);
             this.label5.TabIndex = 7;
@@ -381,6 +310,26 @@
             this.guna2CirclePictureBox1.TabIndex = 6;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
+            // BTN_All_user
+            // 
+            this.BTN_All_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTN_All_user.BorderRadius = 3;
+            this.BTN_All_user.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_All_user.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_All_user.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_All_user.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_All_user.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_All_user.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_All_user.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BTN_All_user.ForeColor = System.Drawing.Color.White;
+            this.BTN_All_user.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_All_user.Location = new System.Drawing.Point(3, 553);
+            this.BTN_All_user.Name = "BTN_All_user";
+            this.BTN_All_user.Size = new System.Drawing.Size(231, 37);
+            this.BTN_All_user.TabIndex = 5;
+            this.BTN_All_user.Text = "All User Account";
+            this.BTN_All_user.Click += new System.EventHandler(this.BTN_All_user_Click);
+            // 
             // BTN_Logout
             // 
             this.BTN_Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -394,7 +343,7 @@
             this.BTN_Logout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Logout.ForeColor = System.Drawing.Color.White;
             this.BTN_Logout.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_Logout.Location = new System.Drawing.Point(3, 561);
+            this.BTN_Logout.Location = new System.Drawing.Point(3, 596);
             this.BTN_Logout.Name = "BTN_Logout";
             this.BTN_Logout.Size = new System.Drawing.Size(231, 52);
             this.BTN_Logout.TabIndex = 5;
@@ -500,6 +449,45 @@
             this.BTN_UploadPhoto.Text = "Upload Photo";
             this.BTN_UploadPhoto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // BTN_Homepage
+            // 
+            this.BTN_Homepage.BorderRadius = 3;
+            this.BTN_Homepage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_Homepage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_Homepage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_Homepage.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_Homepage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_Homepage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_Homepage.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.BTN_Homepage.ForeColor = System.Drawing.Color.White;
+            this.BTN_Homepage.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_Homepage.Location = new System.Drawing.Point(7, 235);
+            this.BTN_Homepage.Name = "BTN_Homepage";
+            this.BTN_Homepage.Size = new System.Drawing.Size(231, 33);
+            this.BTN_Homepage.TabIndex = 0;
+            this.BTN_Homepage.Text = "Home Page";
+            this.BTN_Homepage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BTN_Homepage.Click += new System.EventHandler(this.BTN_Homepage_Click);
+            // 
+            // BTN_ERPatient
+            // 
+            this.BTN_ERPatient.BorderRadius = 3;
+            this.BTN_ERPatient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_ERPatient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_ERPatient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_ERPatient.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_ERPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_ERPatient.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_ERPatient.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.BTN_ERPatient.ForeColor = System.Drawing.Color.Navy;
+            this.BTN_ERPatient.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_ERPatient.Location = new System.Drawing.Point(7, 271);
+            this.BTN_ERPatient.Name = "BTN_ERPatient";
+            this.BTN_ERPatient.Size = new System.Drawing.Size(231, 33);
+            this.BTN_ERPatient.TabIndex = 0;
+            this.BTN_ERPatient.Text = "E.R Patient";
+            this.BTN_ERPatient.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // BTN_ERTransfer
             // 
             this.BTN_ERTransfer.BorderRadius = 3;
@@ -557,15 +545,28 @@
             this.guna2GradientPanel2.Controls.Add(this.dateTimePicker2);
             this.guna2GradientPanel2.Controls.Add(this.dateTimePicker1);
             this.guna2GradientPanel2.Controls.Add(this.BTN_Filter);
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton7);
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton6);
+            this.guna2GradientPanel2.Controls.Add(this.BTN_PrintAbstract);
+            this.guna2GradientPanel2.Controls.Add(this.BTN_Print_ERTransfer);
+            this.guna2GradientPanel2.Controls.Add(this.BTN_PrintHistory);
             this.guna2GradientPanel2.Controls.Add(this.BTN_Search);
             this.guna2GradientPanel2.Controls.Add(this.menuStrip1);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 70);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 35);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(983, 73);
             this.guna2GradientPanel2.TabIndex = 6;
+            // 
+            // Lbl_ID
+            // 
+            this.Lbl_ID.AutoSize = true;
+            this.Lbl_ID.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Lbl_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ID.ForeColor = System.Drawing.Color.Black;
+            this.Lbl_ID.Location = new System.Drawing.Point(200, 39);
+            this.Lbl_ID.Name = "Lbl_ID";
+            this.Lbl_ID.Size = new System.Drawing.Size(20, 16);
+            this.Lbl_ID.TabIndex = 7;
+            this.Lbl_ID.Text = "ID";
             // 
             // label10
             // 
@@ -651,41 +652,62 @@
             this.BTN_Filter.TabIndex = 0;
             this.BTN_Filter.Text = "Apply Filter";
             // 
-            // guna2GradientButton7
+            // BTN_PrintAbstract
             // 
-            this.guna2GradientButton7.BorderRadius = 4;
-            this.guna2GradientButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton7.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.guna2GradientButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton7.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton7.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientButton7.Location = new System.Drawing.Point(398, 38);
-            this.guna2GradientButton7.Name = "guna2GradientButton7";
-            this.guna2GradientButton7.Size = new System.Drawing.Size(150, 30);
-            this.guna2GradientButton7.TabIndex = 0;
-            this.guna2GradientButton7.Text = "Print Medical Abstract";
+            this.BTN_PrintAbstract.BorderRadius = 4;
+            this.BTN_PrintAbstract.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.BTN_PrintAbstract.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_PrintAbstract.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_PrintAbstract.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_PrintAbstract.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_PrintAbstract.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_PrintAbstract.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_PrintAbstract.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BTN_PrintAbstract.ForeColor = System.Drawing.Color.White;
+            this.BTN_PrintAbstract.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_PrintAbstract.Location = new System.Drawing.Point(398, 38);
+            this.BTN_PrintAbstract.Name = "BTN_PrintAbstract";
+            this.BTN_PrintAbstract.Size = new System.Drawing.Size(150, 30);
+            this.BTN_PrintAbstract.TabIndex = 0;
+            this.BTN_PrintAbstract.Text = "Print Medical Abstract";
             // 
-            // guna2GradientButton6
+            // BTN_Print_ERTransfer
             // 
-            this.guna2GradientButton6.BorderRadius = 4;
-            this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(261, 38);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.Size = new System.Drawing.Size(135, 30);
-            this.guna2GradientButton6.TabIndex = 0;
-            this.guna2GradientButton6.Text = "Print Patient History";
+            this.BTN_Print_ERTransfer.BorderRadius = 4;
+            this.BTN_Print_ERTransfer.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.BTN_Print_ERTransfer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_Print_ERTransfer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_Print_ERTransfer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_Print_ERTransfer.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_Print_ERTransfer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_Print_ERTransfer.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_Print_ERTransfer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BTN_Print_ERTransfer.ForeColor = System.Drawing.Color.White;
+            this.BTN_Print_ERTransfer.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_Print_ERTransfer.Location = new System.Drawing.Point(261, 37);
+            this.BTN_Print_ERTransfer.Name = "BTN_Print_ERTransfer";
+            this.BTN_Print_ERTransfer.Size = new System.Drawing.Size(135, 30);
+            this.BTN_Print_ERTransfer.TabIndex = 0;
+            this.BTN_Print_ERTransfer.Text = "Print";
+            this.BTN_Print_ERTransfer.Visible = false;
+            // 
+            // BTN_PrintHistory
+            // 
+            this.BTN_PrintHistory.BorderRadius = 4;
+            this.BTN_PrintHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_PrintHistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BTN_PrintHistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_PrintHistory.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BTN_PrintHistory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BTN_PrintHistory.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
+            this.BTN_PrintHistory.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BTN_PrintHistory.ForeColor = System.Drawing.Color.White;
+            this.BTN_PrintHistory.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.BTN_PrintHistory.Location = new System.Drawing.Point(261, 38);
+            this.BTN_PrintHistory.Name = "BTN_PrintHistory";
+            this.BTN_PrintHistory.Size = new System.Drawing.Size(135, 30);
+            this.BTN_PrintHistory.TabIndex = 0;
+            this.BTN_PrintHistory.Text = "Print Patient History";
             // 
             // BTN_Search
             // 
@@ -794,28 +816,28 @@
             // Edit_eRTransferToolStripMenuItem1
             // 
             this.Edit_eRTransferToolStripMenuItem1.Name = "Edit_eRTransferToolStripMenuItem1";
-            this.Edit_eRTransferToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.Edit_eRTransferToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.Edit_eRTransferToolStripMenuItem1.Text = "E.R Transfer";
             this.Edit_eRTransferToolStripMenuItem1.Click += new System.EventHandler(this.Edit_eRTransferToolStripMenuItem1_Click);
             // 
             // Edit_medicalAbstractToolStripMenuItem
             // 
             this.Edit_medicalAbstractToolStripMenuItem.Name = "Edit_medicalAbstractToolStripMenuItem";
-            this.Edit_medicalAbstractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Edit_medicalAbstractToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.Edit_medicalAbstractToolStripMenuItem.Text = "Medical Abstract";
             this.Edit_medicalAbstractToolStripMenuItem.Click += new System.EventHandler(this.Edit_medicalAbstractToolStripMenuItem_Click);
             // 
             // Edit_patientHistoryToolStripMenuItem
             // 
             this.Edit_patientHistoryToolStripMenuItem.Name = "Edit_patientHistoryToolStripMenuItem";
-            this.Edit_patientHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Edit_patientHistoryToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.Edit_patientHistoryToolStripMenuItem.Text = "Medical Certificate";
             this.Edit_patientHistoryToolStripMenuItem.Click += new System.EventHandler(this.Edit_patientHistoryToolStripMenuItem_Click);
             // 
             // Edit_patientHistoryToolStripMenuItem2
             // 
             this.Edit_patientHistoryToolStripMenuItem2.Name = "Edit_patientHistoryToolStripMenuItem2";
-            this.Edit_patientHistoryToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.Edit_patientHistoryToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.Edit_patientHistoryToolStripMenuItem2.Text = "Patient History";
             this.Edit_patientHistoryToolStripMenuItem2.Click += new System.EventHandler(this.Edit_patientHistoryToolStripMenuItem2_Click);
             // 
@@ -833,28 +855,28 @@
             // Form_ERTransferToolStripMenuItem
             // 
             this.Form_ERTransferToolStripMenuItem.Name = "Form_ERTransferToolStripMenuItem";
-            this.Form_ERTransferToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Form_ERTransferToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.Form_ERTransferToolStripMenuItem.Text = "E.R Transfer";
             this.Form_ERTransferToolStripMenuItem.Click += new System.EventHandler(this.Form_ERTransferToolStripMenuItem_Click);
             // 
             // Form_medicalAbstractToolStripMenuItem1
             // 
             this.Form_medicalAbstractToolStripMenuItem1.Name = "Form_medicalAbstractToolStripMenuItem1";
-            this.Form_medicalAbstractToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.Form_medicalAbstractToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.Form_medicalAbstractToolStripMenuItem1.Text = "Medical Abstract";
             this.Form_medicalAbstractToolStripMenuItem1.Click += new System.EventHandler(this.Form_medicalAbstractToolStripMenuItem1_Click);
             // 
             // Form_MedicalCertificateToolStripMenuItem1
             // 
             this.Form_MedicalCertificateToolStripMenuItem1.Name = "Form_MedicalCertificateToolStripMenuItem1";
-            this.Form_MedicalCertificateToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.Form_MedicalCertificateToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.Form_MedicalCertificateToolStripMenuItem1.Text = "Medical Certificate";
             this.Form_MedicalCertificateToolStripMenuItem1.Click += new System.EventHandler(this.Form_MedicalCertificateToolStripMenuItem1_Click);
             // 
             // Form_PatientHistoryToolStripMenuItem
             // 
             this.Form_PatientHistoryToolStripMenuItem.Name = "Form_PatientHistoryToolStripMenuItem";
-            this.Form_PatientHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Form_PatientHistoryToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.Form_PatientHistoryToolStripMenuItem.Text = "Patient History";
             this.Form_PatientHistoryToolStripMenuItem.Click += new System.EventHandler(this.Form_PatientHistoryToolStripMenuItem_Click);
             // 
@@ -872,14 +894,26 @@
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
             this.panel5.Controls.Add(this.guna2Panel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 143);
+            this.panel5.Location = new System.Drawing.Point(0, 108);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(265, 588);
+            this.panel5.Size = new System.Drawing.Size(265, 623);
             this.panel5.TabIndex = 7;
             // 
             // guna2Panel2
@@ -895,7 +929,7 @@
             this.guna2Panel2.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel2.Location = new System.Drawing.Point(9, 6);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(250, 576);
+            this.guna2Panel2.Size = new System.Drawing.Size(250, 611);
             this.guna2Panel2.TabIndex = 0;
             // 
             // guna2GroupBox3
@@ -1195,36 +1229,36 @@
             // 
             this.PatientHistory_guna2DataGridView1.AllowUserToAddRows = false;
             this.PatientHistory_guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.PatientHistory_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.PatientHistory_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.PatientHistory_guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.PatientHistory_guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PatientHistory_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PatientHistory_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.PatientHistory_guna2DataGridView1.ColumnHeadersHeight = 35;
             this.PatientHistory_guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.PatientHistory_guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PatientHistory_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PatientHistory_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.PatientHistory_guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PatientHistory_guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.PatientHistory_guna2DataGridView1.Location = new System.Drawing.Point(265, 143);
+            this.PatientHistory_guna2DataGridView1.Location = new System.Drawing.Point(265, 108);
             this.PatientHistory_guna2DataGridView1.Name = "PatientHistory_guna2DataGridView1";
             this.PatientHistory_guna2DataGridView1.RowHeadersVisible = false;
-            this.PatientHistory_guna2DataGridView1.Size = new System.Drawing.Size(718, 588);
+            this.PatientHistory_guna2DataGridView1.Size = new System.Drawing.Size(718, 623);
             this.PatientHistory_guna2DataGridView1.TabIndex = 8;
             this.PatientHistory_guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
             this.PatientHistory_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
@@ -1257,65 +1291,40 @@
             this.Column1.Name = "Column1";
             this.Column1.Width = 40;
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // Lbl_ID
-            // 
-            this.Lbl_ID.AutoSize = true;
-            this.Lbl_ID.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lbl_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ID.ForeColor = System.Drawing.Color.Black;
-            this.Lbl_ID.Location = new System.Drawing.Point(200, 39);
-            this.Lbl_ID.Name = "Lbl_ID";
-            this.Lbl_ID.Size = new System.Drawing.Size(20, 16);
-            this.Lbl_ID.TabIndex = 7;
-            this.Lbl_ID.Text = "ID";
-            // 
             // ER_guna2DataGridView1
             // 
-            this.ER_guna2DataGridView1.AllowUserToAddRows = false;
             this.ER_guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.ER_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.ER_guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ER_guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.ER_guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.ER_guna2DataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ER_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ER_guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.ER_guna2DataGridView1.ColumnHeadersHeight = 35;
             this.ER_guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.ER_guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewCheckBoxColumn1});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ER_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ER_guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.ER_guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ER_guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.ER_guna2DataGridView1.Location = new System.Drawing.Point(265, 143);
+            this.ER_guna2DataGridView1.Location = new System.Drawing.Point(265, 108);
             this.ER_guna2DataGridView1.Name = "ER_guna2DataGridView1";
             this.ER_guna2DataGridView1.RowHeadersVisible = false;
-            this.ER_guna2DataGridView1.Size = new System.Drawing.Size(718, 588);
+            this.ER_guna2DataGridView1.Size = new System.Drawing.Size(718, 623);
             this.ER_guna2DataGridView1.TabIndex = 9;
             this.ER_guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
             this.ER_guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
@@ -1339,6 +1348,7 @@
             this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
             this.ER_guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.ER_guna2DataGridView1.Visible = false;
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -1347,65 +1357,6 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             this.dataGridViewCheckBoxColumn1.Width = 40;
-            // 
-            // BTN_Homepage
-            // 
-            this.BTN_Homepage.BorderRadius = 3;
-            this.BTN_Homepage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Homepage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_Homepage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Homepage.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_Homepage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_Homepage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.BTN_Homepage.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.BTN_Homepage.ForeColor = System.Drawing.Color.White;
-            this.BTN_Homepage.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_Homepage.Location = new System.Drawing.Point(7, 235);
-            this.BTN_Homepage.Name = "BTN_Homepage";
-            this.BTN_Homepage.Size = new System.Drawing.Size(231, 33);
-            this.BTN_Homepage.TabIndex = 0;
-            this.BTN_Homepage.Text = "Home Page";
-            this.BTN_Homepage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BTN_Homepage.Click += new System.EventHandler(this.BTN_Homepage_Click);
-            // 
-            // BTN_ERPatient
-            // 
-            this.BTN_ERPatient.BorderRadius = 3;
-            this.BTN_ERPatient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_ERPatient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_ERPatient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_ERPatient.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_ERPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_ERPatient.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.BTN_ERPatient.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.BTN_ERPatient.ForeColor = System.Drawing.Color.Navy;
-            this.BTN_ERPatient.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_ERPatient.Location = new System.Drawing.Point(7, 271);
-            this.BTN_ERPatient.Name = "BTN_ERPatient";
-            this.BTN_ERPatient.Size = new System.Drawing.Size(231, 33);
-            this.BTN_ERPatient.TabIndex = 0;
-            this.BTN_ERPatient.Text = "E.R Patient";
-            this.BTN_ERPatient.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // BTN_All_user
-            // 
-            this.BTN_All_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_All_user.BorderRadius = 3;
-            this.BTN_All_user.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_All_user.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BTN_All_user.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_All_user.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BTN_All_user.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BTN_All_user.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(129)))), ((int)(((byte)(176)))));
-            this.BTN_All_user.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BTN_All_user.ForeColor = System.Drawing.Color.White;
-            this.BTN_All_user.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.BTN_All_user.Location = new System.Drawing.Point(3, 518);
-            this.BTN_All_user.Name = "BTN_All_user";
-            this.BTN_All_user.Size = new System.Drawing.Size(231, 37);
-            this.BTN_All_user.TabIndex = 5;
-            this.BTN_All_user.Text = "All User Account";
-            this.BTN_All_user.Click += new System.EventHandler(this.BTN_All_user_Click);
             // 
             // Form1
             // 
@@ -1420,13 +1371,12 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
@@ -1453,12 +1403,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button BTN_EXIT;
-        private Guna.UI2.WinForms.Guna2Button BTN_Maximize;
-        private Guna.UI2.WinForms.Guna2Button BTN_Minimiz;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -1481,8 +1426,8 @@
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Search;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
+        private Guna.UI2.WinForms.Guna2GradientButton BTN_PrintAbstract;
+        private Guna.UI2.WinForms.Guna2GradientButton BTN_PrintHistory;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createPatientHistoryToolStripMenuItem;
@@ -1540,6 +1485,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Homepage;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_ERPatient;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_All_user;
+        private Guna.UI2.WinForms.Guna2GradientButton BTN_Print_ERTransfer;
     }
 }
 

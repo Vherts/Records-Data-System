@@ -16,5 +16,21 @@ namespace RecordsDataSystem
         {
             InitializeComponent();
         }
+
+        private void BTN_Close_Click ( object sender, EventArgs e )
+        {
+            this.Close();
+        }
+
+        private void BTN_Save_Click ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void ERForms_Load ( object sender, EventArgs e )
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

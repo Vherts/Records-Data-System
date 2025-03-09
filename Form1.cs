@@ -19,6 +19,7 @@ namespace RecordsDataSystem
             InitializeComponent();
             DisplayData();
             PatientHistory_guna2DataGridView1.BringToFront();
+            BTN_Print_ERTransfer.Visible = false;
         }
         #region
         private void BTN_EXIT_Click ( object sender, EventArgs e )
@@ -92,6 +93,9 @@ namespace RecordsDataSystem
         private void BTN_Homepage_Click ( object sender, EventArgs e )
         {
             PatientHistory_guna2DataGridView1.BringToFront();
+            BTN_PrintAbstract.Enabled = true;
+            BTN_PrintHistory.Enabled = true;
+            BTN_Print_ERTransfer.Visible = false;
         }
         private void PatientHistory ()
         {
@@ -120,8 +124,13 @@ namespace RecordsDataSystem
 
         private void BTN_ERTransfer_Click ( object sender, EventArgs e )
         {
-            var open = new ERForms(); open.ShowDialog();
             ER_guna2DataGridView1.BringToFront();
+            PatientHistory_guna2DataGridView1.SendToBack();
+            BTN_PrintHistory.Enabled = false;
+            BTN_PrintAbstract.Enabled = false;
+            BTN_Print_ERTransfer.Visible = true;
+            var open = new ERForms(); open.ShowDialog();
+            
         }
 
         private void createERTransferToolStripMenuItem_Click ( object sender, EventArgs e )

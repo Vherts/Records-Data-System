@@ -63,6 +63,7 @@
             this.BTN_Preview = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_Save = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BTN_Close = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,9 +72,9 @@
             // 
             this.guna2Panel1.AutoScroll = true;
             this.guna2Panel1.Controls.Add(this.guna2GroupBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 296);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(786, 670);
+            this.guna2Panel1.Size = new System.Drawing.Size(786, 378);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2GroupBox1
@@ -113,9 +114,9 @@
             this.guna2GroupBox1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(3, 8);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(766, 1004);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(766, 999);
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "E.R Transfer Records";
             // 
@@ -248,7 +249,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 962);
+            this.panel1.Location = new System.Drawing.Point(0, 957);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(766, 42);
             this.panel1.TabIndex = 18;
@@ -690,6 +691,7 @@
             this.BTN_Save.Size = new System.Drawing.Size(110, 33);
             this.BTN_Save.TabIndex = 2;
             this.BTN_Save.Text = "Save";
+            this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
             // 
             // BTN_Close
             // 
@@ -709,12 +711,25 @@
             this.BTN_Close.Size = new System.Drawing.Size(115, 33);
             this.BTN_Close.TabIndex = 2;
             this.BTN_Close.Text = "Close";
+            this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.Location = new System.Drawing.Point(12, 4);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(786, 286);
+            this.reportViewer1.TabIndex = 3;
             // 
             // ERForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 731);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.BTN_Close);
             this.Controls.Add(this.BTN_Save);
             this.Controls.Add(this.BTN_Preview);
@@ -722,6 +737,7 @@
             this.Name = "ERForms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERForms";
+            this.Load += new System.EventHandler(this.ERForms_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
@@ -765,5 +781,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Preview;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Save;
         private Guna.UI2.WinForms.Guna2GradientButton BTN_Close;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
